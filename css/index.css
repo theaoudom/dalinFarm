@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background{
+    width: 100%;
+    height: 400px;
+    background: url(/image/container2_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container1{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.container1 .right .button .text p{
+    margin: 0;
+    padding-bottom: 3px;
+}
+.container1 button{
+    padding: 20px;
+    border: none;
+    margin-right: 25px;
+    background-color: yellow;
+}
+.container1 button:hover{
+    background-color: green;
+    transition: 0.8s;
+}
+.container1 .left{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.container1 .right{
+    width: 50%;
+    height: 100%;
+    padding:70px;
+}
+.slide{
+    width: 100%;
+    height: 600px;
+}
+.slide .carousel-item{
+    position: relative;
+}
+.slide .carousel-item .text{
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    height: 450px;
+    transform: translate(-50%);
+    text-align: center;
+}
+.slide .carousel-item .text h5{
+    font-family: 'Kalam', cursive;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.slide .carousel-item .text h1{
+    font-size: 105px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    transition: 0.8s;
+}
+.slide .carousel-item .text h3{
+    margin: 160px 0 80px 0;
+    font-size: 37px;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.slide .carousel-item .text a{
+    padding: 20px 45px;
+    background-color: #E9DA5D;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+
+}
+.slide .carousel-item .text a:hover{
+    background-color: #9fff80;
+    color: white;
+    transition: 0.3s;
+}
+.slide .carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+.carousel-item{
+    position: relative;
+}
+h1{
+    position: absolute;
+}
+.container2{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 50px 100px;
+}
+.container2 .box{
+    width: 100%;
+    height: 300px;
+}
+.container2 .box .num-icon{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    padding: 0 40px;
+}
+.container2 .box .num-icon .num{
+    font-size: 90px;
+    font-weight: bold;
+    color: rgba(128, 128, 128, 0.507);
+}.container2 .box a{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 5px;
+}
+.container2 .box .num-icon i{
+    font-size: 90px;
+    margin-left: 15px;
+    margin-top: 25px;
+    color: rgba(128, 128, 128, 0.507);
+}
+.container2 .box p{
+    margin-top: 20px;
+    color: white;
+    font-size: 16px;
+}
+.title1{
+    display: flex;
+    justify-content: center;
+}
+.title1 ul{
+    list-style: none;
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    padding: 50px 0 20px 0;
+    border-bottom: 3px solid gray;
+}
+.title1 ul li a{
+    color: #D5DBDB;
+    font-weight: bold;
+    text-decoration: none;
+}
+.title1 ul li #all{
+    color: green;
+    width: 100%;
+    border-bottom: green;
+}
+.container-fluid{
+    margin: 30px 0;
+}
+.container-fluid .row{
+    display: grid;
+    padding: 0px 80px;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+.container-fluid .row .card .order{
+    background-color: black;
+}
+.container-fluid .row .card .order a{
+    width: 50px;
+    height: 50px;
+    background-color: #9fff80;
+    border-radius: 50%;
+}
+/* Card */
+#card{
+    border-radius: 5px;
+    width: 100%;
+    height: 380px;
+    margin: 25px 0;
+    padding: 50px 50px ;
+    background-color: #f5f5f5;
+    position: relative;
+    transition: 0.2s;
+}
+
+.card-text{
+    font-size: 20px;
+    text-align: center;
+}
+#card h2{
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 15px;
+    font-size: 14px;
+    color: white;
+    border-radius: 7px;
+    position: absolute;
+    right: 10px ;
+    top: 10px;
+}
+#card .fram-img{
+    width: 100%;
+    height: 150px;
+}
+#card .fram-img img {
+    height: 100%;
+}
+#card .order{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#card .card-body .order .search,#card .card-body .order .cart{
+    width: 0;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+#card .card-body .order i{
+    font-size: 0;
+    transition: 0.5s;
+}
+#card:hover .card-body .order .search,#card:hover .card-body .order .cart{
+    width: 55px;
+    height: 55px;
+    transition: 0.5s;
+}
+#card:hover .card-body .order i{
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+#card:hover{
+    margin: 0 0 -22px 0 ;
+    height: 450px;
+    box-shadow: 1px 1px 50px -28px black;
+    background-color: white;
+    transition: 0.3s;
+}
+#card .card-body .search{
+    background-color: #e9da5d;
+    transition: 0.3s;
+    margin-right: 8px;
+}
+#card .card-body .search i{
+    color: black;
+    transition: 0.3s;
+}
+#card .card-body .cart{
+    margin-left: 8px;
+    background-color: #9fff80;
+    transition: 0.3s;
+}
+#card .card-body .cart i{
+    color: white;
+    transition: 0.3s;
+}
+        /* hover order in Card */
+#card .card-body .search:hover{
+    background-color: #9fff80;
+    transition: 0.3s;
+}
+#card .card-body .search:hover i{
+    color: white;
+    transition: 0.3s;
+}
+#card .card-body .cart:hover{
+    background-color: #e9da5d;
+    transition: 0.3s;
+}
+#card .card-body .cart:hover i{
+    color: black;
+    transition: 0.3s;
+}
+        /* -- */
+/* === */
+.left1,.center,.center1,.right1{
+    width: 22%;
+    height: 100%;
+}
+
+.feedback{
+    width: 100%;
+    height: 700px;
+    background-color: #D5DBDB;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.center1{
+    width: 40%;
+    height: 100%;
+    padding: 80px 0;
+}
+.center1 h4{
+    font-size: 22px;
+    font-family: 'Kalam', cursive;
+    color: green;
+}
+.center1 h2{
+    font-size: 60px;
+    font-weight: 600;
+}
+.organic{
+  
+    width: 30%;
+    height: 100%;
+}
+.organic1{ 
+    width: 30%;
+    height: 100%;
+}
+/* bg-title */
+.bg-title{
+    position: absolute;
+    width: 950px;
+    height: 350px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 18%;
+    background-color: rgba(237, 232, 232, 0.5);
+    border-radius: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 90px -70px black;
+}
+.title{
+    width: 750px;
+    height: 110%;
+    background-color: white;
+    border-radius: 70px;
+    box-shadow: 1px 1px 90px -50px black;
+    overflow: hidden;
+}
+
+h4{
+    color: black;
+}
+.bg-title .title .carousel-inner{
+    height: 100%;
+}
+.carousel-item{
+    height: 100%;
+}
+.bg-title .title .d-block i {
+    padding: 40px 0 0 47%;
+    font-size: 40px;
+    color: #9fff80;
+    width: 100%;
+}
+.bg-title .title .d-block #text{
+    width: 100%;
+    height: 50%;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 100px;
+    color: gray;
+}
+.bg-title .title .d-block .profile{
+    width: 100%;
+    height: 30%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+.bg-title .title .d-block .profile .img-profile{
+    background-color: rgb(48, 165, 42);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    overflow: hidden;
+}
+.bg-title .title .d-block .profile .img-profile img{
+    width: 100%;
+    height: 100%;
+}
+.bg-title .title .d-block .profile .name h4{
+    font-size: 20px;
+}
+.bg-title .title .d-block .profile .name h3{
+    font-size: 20px;
+    color: green;
+    font-style: italic;
+}
+/* ===== */
+.foodbox{
+    width: 1475px;
+    height: 700px;
+    padding: 0 100px;
+    margin-top: 100px;
+}
+.food{
+    width: 90%;
+    height: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.discount{
+    width: 58%;
+    height: 100%;
+}
+.sale{
+    width: 39%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sale1{
+    width: 100%;
+    height: 59%;
+}
+.sale2{
+    width: 100%;
+    height: 38%;
+}
+.foodbox .food img{
+    width: 100%;
+    height: 100%;
+}
+/* organicfood */
+.organicfood{
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    display: flex;
+    padding: 0 160px;
+}
+.organicfood .left{
+    width: 45%;
+    height: 100%;
+    background-color: #D5DBDB;
+    padding: 0;
+}
+.organicfood .left #fram-img{
+    width: 100%;
+    margin: 0;
+    height: 400px;
+    padding: 50px 30px;
+}
+.organicfood .left #card-body{
+    width: 100%;
+}
+.organicfood .left #card-body .card-text{
+    font-size: 30px;
+}
+.organicfood .right{
+    width: 55%;
+    height: 100%;
+    padding: 50px 40px;
+}
+.organicfood .right #title{
+    font-size: 22px;
+    font-family: 'Kalam', cursive;
+    color: green;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.organicfood .right .qa{
+    margin-top: 90px;
+    height: 420px;
+}
+.organicfood .right .qa1{
+    width: 100%;
+    height: fit-content;
+}
+.organicfood .right .qa1 i{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 1px 1px 40px -10px black;
+    rotate: 90deg;
+    transition: 0.5s;
+}
+.organicfood .right .qa1 i:hover{
+    rotate: 180deg;
+    transition: 0.5s;
+}
+.organicfood .right .qa1 #icon{
+    display: flex; 
+    justify-content: left; 
+    padding: 20px 0;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+}
+/* icon */
+.icon{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.icon .icon1{
+    width: 80% ;
+    height: 100%;
+    padding: 50px 60px;
+    display: flex;
+    border-bottom: 1px solid rgba(211, 204, 204, 0.737);
+}
+.icon .icon1 img{
+    margin:0 60px ;
+}
+/* blog */
+.blog{
+    width: 100%;
+    height: 800px;
+    margin-top: 10px;
+}
+.title-blog{
+    text-align: center;
+}
+.blog .blog1{
+    width: 90%;
+    height: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.blog-left{
+    width: 30%;
+    height: 100%;
+}
+.blog .blog1 .image{
+    width: 100%;
+    height: 65%;
+    overflow: hidden;
+}
+.blog .blog1 .image img{
+    width: 100%;
+    height: 100%;
+}
+.blog .blog1  h4{
+    margin: 25px 0;
+    text-align: center;
+    font-size: 22px;
+}
+.blog .blog1 .date{
+    text-align: center;
+    font-size: 18px;
+    color: #D5DBDB;
+}
+.blog .blog-box .image img{
+    transition: 0.5s;
+}
+.blog .blog-box:hover .image img{
+    transform: scale(1.2);
+    transition: 0.5s;
+}

@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container1{
+    width: 100%;
+    height: 400px;
+    background: url(/image/vegetable-bg.jpg);
+    background-color: gray;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container1 h1{
+    text-align: center;
+    font-size: 50px;
+    padding: 150px 0;
+    text-shadow: 3px 9px 16px rgba(0, 0, 0, 0.18);
+}
+.custom-footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: content;
+    margin-top: 20px;
+    justify-content: center;
+}
+.custom-footer ul{
+   list-style: none;
+   display: flex;
+   align-items: center;
+}
+.custom-footer ul li{
+    margin-right: 15px;   
+    display: flex; 
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.custom-footer ul li a{
+    color: rgb(165, 164, 164);
+    transition: 0.5s;
+    text-decoration: none;
+}
+.custom-footer ul li a:hover{
+    color: white;
+    transition: 0.5s;
+}
+.custom-footer ul li i{
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.title1{
+    display: flex;
+    justify-content: center;
+}
+.title1 ul{
+    list-style: none;
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    padding: 50px 0 20px 0;
+    border-bottom:4px solid gray;
+}
+.title1 ul li a{
+    color: #D5DBDB;
+    font-weight: bold;
+    text-decoration: none;
+}
+.title1 ul li #all{
+    color: green;
+    width: 100%;
+    border-bottom: green;
+}
+.title1 ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+.title1 ul li:not(#all){
+    margin: 0 20px;
+}
+.container3{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    padding: 50px 130px;
+}
+.container3 img{
+    width: 100%;
+    height: 300px;
+}

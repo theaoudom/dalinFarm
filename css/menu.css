@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    position: relative;
+}
+#container{
+    width: 100%;
+    height: 100px;
+    padding: 0 5%;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    color: white;
+    position: relative;
+    z-index: 999999999;
+    position: sticky;
+    top: -100px;
+    transition: 0.6s;
+}
+.main-menu{
+    position: relative;
+}
+.main-menu:hover .dropdown{
+    display: block;
+}
+.menu .dropdown {
+    left: -40px;
+    width: 200px;
+    position: absolute;
+    display: none;
+}
+.menu .dropdown ul{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 25px 20px;
+}
+.menu .dropdown ul li{
+    list-style: none;
+    padding: 5px 0;
+}
+.menu .dropdown ul li a{
+    font-size: 15px;
+}
+.menu{
+    width: 60%;
+    height: 100%;
+    padding: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.menu .dropdown{
+    color: black;
+}
+#container  .menu li{
+    margin: 0 20px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+#container .menu li a:hover{
+    color: green;
+}
+.menu-right{
+    width: 20%;
+    height: 100%;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-right ul{
+    display: flex;
+}
+i{
+    font-size: 25px;
+}
+
+.menu-right button{
+    background-color: unset;
+    border: none;
+}
+.menu-right li{
+    list-style: none;
+    margin-left: 10px;
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+}
+
