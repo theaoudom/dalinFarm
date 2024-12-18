@@ -1,42 +1,58 @@
-var answer = document.querySelector("#answer");
-var answer2 = document.querySelector("#answer2");
-var answer3 = document.querySelector("#answer3");
-
-var clk = document.querySelector(".clk");
-var clk2 = document.querySelector(".clk2");
-var clk3 = document.querySelector(".clk3");
-
-var clkicon = document.querySelector(".clkicon");
-var clkicon2 = document.querySelector(".clkicon2");
-var clkicon3 = document.querySelector(".clkicon3");
-
-clk.addEventListener("click",function(){
-    answer.style.height="100px";
-    answer.style.display="block";
-    answer.transition="0.6s";
-    answer3.style.display="none";
-    answer2.style.display="none";
-    clkicon.style.background="#e9da5d"
-    clkicon3.style.background="white"
-    clkicon2.style.background="white"
-})
-clk2.addEventListener("click",function(){
-    answer.style.display="none";
-    answer3.style.display="none";
-    answer2.style.height="130px";
-    answer2.style.display="block";
-    answer2.transition="0.6s";
-    clkicon2.style.background="#e9da5d"
-    clkicon.style.background="white"
-    clkicon3.style.background="white"
-})
-clk3.addEventListener("click",function(){
-    answer.style.display="none";
-    answer2.style.display="none";
-    answer3.style.height="150px";
-    answer3.style.display="block";
-    answer3.transition="0.6s";
-    clkicon3.style.background="#e9da5d"
-    clkicon.style.background="white"
-    clkicon2.style.background="white"
-})
+function toggleAnswer(target, answers, icons) {
+    const targetAnswer = document.querySelector(target.answerId);
+    const targetIcon = document.querySelector(target.iconClass);
+    const iconsRotate = document.querySelector(".organicfood .right .qa1 i");
+    // Check the current state
+    const isVisible = targetAnswer.style.display === "block";
+  
+    // Hide all answers and reset all icons
+    answers.forEach((answer) => {
+      answer.style.display = "none";
+      answer.style.height = "0";
+    });
+    icons.forEach((icon) => (icon.style.background = "white"));
+  
+    // If the target was visible, no need to re-open
+    if (!isVisible) {
+        targetAnswer.style.display = "block";
+        targetAnswer.style.height = target.height;
+        targetIcon.style.background = "#e9da5d";
+    }
+  }
+  
+  const answers = [
+    document.querySelector("#answer"),
+    document.querySelector("#answer2"),
+    document.querySelector("#answer3"),
+  ];
+  
+  const icons = [
+    document.querySelector(".clkicon"),
+    document.querySelector(".clkicon2"),
+    document.querySelector(".clkicon3"),
+  ];
+  
+  document.querySelector(".clk").addEventListener("click", () =>
+    toggleAnswer(
+      { answerId: "#answer", iconClass: ".clkicon", height: "100px" },
+      answers,
+      icons
+    )
+  );
+  
+  document.querySelector(".clk2").addEventListener("click", () =>
+    toggleAnswer(
+      { answerId: "#answer2", iconClass: ".clkicon2", height: "130px" },
+      answers,
+      icons
+    )
+  );
+  
+  document.querySelector(".clk3").addEventListener("click", () =>
+    toggleAnswer(
+      { answerId: "#answer3", iconClass: ".clkicon3", height: "150px" },
+      answers,
+      icons
+    )
+  );
+  

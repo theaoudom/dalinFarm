@@ -497,10 +497,21 @@ h4{
     rotate: 90deg;
     transition: 0.5s;
 }
-.organicfood .right .qa1 i:hover{
+.organicfood .right .qa1 .clk:hover i{
     rotate: 180deg;
     transition: 0.5s;
 }
+
+.organicfood .right .qa1 .clk2:hover i{
+    rotate: 180deg;
+    transition: 0.5s;
+}
+
+.organicfood .right .qa1 .clk3:hover i{
+    rotate: 180deg;
+    transition: 0.5s;
+}
+
 .organicfood .right .qa1 #icon{
     display: flex; 
     justify-content: left; 
