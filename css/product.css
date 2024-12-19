@@ -176,7 +176,6 @@ li{
 .nav-bar ul{
     width: 70%;
     list-style: none;
-    /* background-color: aqua; */
     display: flex;
     justify-content: space-between;
     
