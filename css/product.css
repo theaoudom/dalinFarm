@@ -167,6 +167,7 @@ li{
 .div .button:hover{
     background-color: green;
     transition: 0.9s;
+    border: none;
 }
 .nav-bar{
     width: 100%;
