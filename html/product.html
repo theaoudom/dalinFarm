@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SINGLE PRODUCT</title>
+        <meta name="description" content="Fresh organic produce from Dalin Farm. Our products are grown using sustainable farming practices and harvested at peak ripeness for maximum flavor and nutrition.">
+        <meta name="keywords" content="organic produce, fresh vegetables, sustainable farming, farm to table, organic fruits">
+        <title>Organic Bananas - Dalin Farm Products</title>
         <!-- Google Script Ads -->
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5602570319866246"
         crossorigin="anonymous"></script>
@@ -101,67 +103,197 @@
         </div>
     </div>
     <div class="container1">
-        <h1>SINGLE PRODUCT</h1>
+        <h1>Product Details</h1>
+        <p class="product-intro">Quality organic produce from our farm to your table</p>
     </div>
     <div class="custom-footer">
         <ul class="custom-path">
-            <li><a href="html/index.html">HOME</a> <i class="fa-solid fa-arrow-right"></i></li>
-            <li><a href="html/vigetable.html">SHOP</a> <i class="fa-solid fa-arrow-right"></i></li>
-            <li>SINGLE PRODUCT</li>
+            <li><a href="../index.html">HOME</a> <i class="fa-solid fa-arrow-right"></i></li>
+            <li><a href="vigetable.html">SHOP</a> <i class="fa-solid fa-arrow-right"></i></li>
+            <li>ORGANIC BANANAS</li>
         </ul>
       </div>
-    <div class="container3">
-        <div class="row">
-            <div class="left">
-                <img src="../image/orang3.png" alt="" width="80%" height="60%"
-                    style="background-color: rgba(128, 128, 128, 0.059);">
-                <img src="../image/orang3.png" alt=""
-                    style="background-color: rgba(128, 128, 128, 0.087); width: 26%; height: 20%;">
-                <img src="../image/photo4.jpg" alt=""
-                    style="background-color: rgba(128, 128, 128, 0.087); width: 26%; height: 20%;">
-                <img src="../image/photo5.jpg" alt=""
-                    style="background-color: rgba(128, 128, 128, 0.087); width: 26%; height: 20%;">
+    <div class="product-container">
+        <div class="product-gallery">
+            <div class="main-image">
+                <img src="../image/banana.png" alt="Fresh organic bananas" id="mainImage">
+                <span class="badge-sale">SALE</span>
             </div>
-            <div class="right">
-                <h3>Oranges</h3>
-                <div class="group-middel">
-                    <div class="price">$20</div>
-                    <div class="rating" style="padding: 0 20px;">
-                        <span class="star"><i class="fa-solid fa-star"></i></span>
-                        <span class="star"><i class="fa-solid fa-star"></i></span>
-                        <span class="star"><i class="fa-solid fa-star"></i></span>
-                        <span class="star"><i class="fa-solid fa-star"></i></span>  
+            <div class="thumbnail-images">
+                <img src="../image/banana-detail1.jpg" alt="Banana tree in our organic farm" onclick="changeImage(this)">
+                <img src="../image/banana-detail2.jpg" alt="Banana bunch close-up" onclick="changeImage(this)">
+                <img src="../image/banana-detail3.jpg" alt="Banana harvest process" onclick="changeImage(this)">
+            </div>
+        </div>
+
+        <div class="product-info">
+            <h1>Organic Bananas</h1>
+            <div class="product-rating">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>(24 reviews)</span>
+            </div>
+
+            <div class="product-price">
+                <span class="original-price">$22.00</span>
+                <span class="sale-price">$13.00</span>
+                <span class="per-unit">per bunch</span>
+            </div>
+
+            <div class="product-description">
+                <p>Our organic bananas are grown using sustainable farming practices, ensuring both environmental responsibility and superior taste. Each bunch is harvested at the perfect ripeness for optimal flavor and nutrition.</p>
+                
+                <h3>Product Features:</h3>
+                <ul>
+                    <li>100% Organic certified</li>
+                    <li>Rich in potassium and vitamins</li>
+                    <li>No artificial ripening agents</li>
+                    <li>Sustainably farmed</li>
+                    <li>Perfect for smoothies and baking</li>
+                </ul>
+
+                <div class="nutrition-info">
+                    <h3>Nutrition Information</h3>
+                    <table>
+                        <tr>
+                            <td>Serving Size:</td>
+                            <td>1 medium banana (118g)</td>
+                        </tr>
+                        <tr>
+                            <td>Calories:</td>
+                            <td>105</td>
+                        </tr>
+                        <tr>
+                            <td>Potassium:</td>
+                            <td>422mg</td>
+                        </tr>
+                        <tr>
+                            <td>Dietary Fiber:</td>
+                            <td>3.1g</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="product-form">
+                <div class="quantity-selector">
+                    <button class="quantity-btn" onclick="updateQuantity(-1)">-</button>
+                    <input type="number" value="1" min="1" id="quantity">
+                    <button class="quantity-btn" onclick="updateQuantity(1)">+</button>
+                </div>
+                <button class="add-to-cart">
+                    <i class="fas fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+                <button class="add-to-wishlist">
+                    <i class="far fa-heart"></i>
+                    Add to Wishlist
+                </button>
+            </div>
+
+            <div class="product-meta">
+                <p><strong>Category:</strong> <a href="#">Organic Fruits</a></p>
+                <p><strong>Tags:</strong> <a href="#">Organic</a>, <a href="#">Fresh</a>, <a href="#">Local</a></p>
+                <p><strong>SKU:</strong> OF-BAN-001</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-tabs">
+        <div class="tab-buttons">
+            <button class="tab-btn active" onclick="showTab('description')">Description</button>
+            <button class="tab-btn" onclick="showTab('additional')">Additional Information</button>
+            <button class="tab-btn" onclick="showTab('reviews')">Reviews (24)</button>
+        </div>
+
+        <div class="tab-content">
+            <div id="description" class="tab-pane active">
+                <h2>Product Description</h2>
+                <p>Our organic bananas are carefully cultivated in our sustainable farm using traditional farming methods combined with modern organic practices. Each bunch is hand-picked at the optimal ripeness to ensure the best flavor and nutritional value.</p>
+                
+                <h3>Growing Process</h3>
+                <p>We use natural fertilizers and pest control methods to maintain the health of our banana plants. Our irrigation system is designed to conserve water while providing optimal growing conditions. No artificial ripening agents or chemicals are used in any stage of the growing process.</p>
+                
+                <h3>Storage Tips</h3>
+                <ul>
+                    <li>Store at room temperature until ripe</li>
+                    <li>Once ripe, can be refrigerated to slow ripening</li>
+                    <li>Keep away from direct sunlight</li>
+                    <li>Store away from other fruits to prevent accelerated ripening</li>
+                </ul>
+            </div>
+
+            <div id="additional" class="tab-pane">
+                <h2>Additional Information</h2>
+                <table class="info-table">
+                    <tr>
+                        <th>Weight</th>
+                        <td>1.2 kg (average bunch)</td>
+                    </tr>
+                    <tr>
+                        <th>Origin</th>
+                        <td>Dalin Farm, Local</td>
+                    </tr>
+                    <tr>
+                        <th>Certification</th>
+                        <td>USDA Organic</td>
+                    </tr>
+                    <tr>
+                        <th>Storage</th>
+                        <td>Room temperature</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="reviews" class="tab-pane">
+                <h2>Customer Reviews</h2>
+                <div class="review-summary">
+                    <div class="average-rating">
+                        <h3>4.5</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>Based on 24 reviews</p>
                     </div>
                 </div>
-                <p style="margin-top: 30px; font-size: 20px;">Fresh and juicy oranges, handpicked for their exceptional quality and taste. Perfect for snacks, juices, or cooking. Enjoy the natural sweetness packed with vitamin C to boost your day!</p>
-                <hr>
-                <ul style="list-style: none; margin-top: 30px;">
-                    <li>
-                        <span>Categories :</span>
-                        <span>Orange</span>
-                    </li>
-                    <li>
-                        <span>Weight:</span>
-                        <span>1kg</span>
-                    </li>
-                    <li>
-                        <span>Box:</span>
-                        <span>60 x 60 x 90 cm</span>
-                    </li>
-                </ul>
-                <div class="steper">
-                    <!-- <div id="number" value="1" style="width: 50px; height: 50px; background-color: blue; color: white;">1</div> -->
-                    <input class="number" type="number" value="1">
-                    <button class="up" style="margin: 0 10px;">+</button>
-                    <span class="down" style="margin: 0 10px;">-</span>
-                </div>
-                <div class="div">
-                    <button class="button"><a href="">Add to card</a></button>
-                    <hr class="">
+
+                <div class="review-list">
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>Perfect for Smoothies!</h4>
+                        </div>
+                        <p class="review-author">By Sarah J. on January 15, 2024</p>
+                        <p class="review-text">These bananas are consistently fresh and delicious. Perfect ripeness and great flavor. I use them in my morning smoothies and they're always fantastic.</p>
+                    </div>
+                    <!-- Add more review items as needed -->
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="related-products">
+        <h2>Related Products</h2>
+        <div class="products-grid">
+            <!-- Similar product cards structure as in the shop page -->
+        </div>
+    </div>
+
     <div class="footer">
         <div class="boder">
           <div class="left">
@@ -201,6 +333,38 @@
           </div>
         </div>
       </div>
+
+    <script>
+    function changeImage(element) {
+        document.getElementById('mainImage').src = element.src;
+    }
+
+    function updateQuantity(change) {
+        const input = document.getElementById('quantity');
+        const newValue = parseInt(input.value) + change;
+        if (newValue >= 1) {
+            input.value = newValue;
+        }
+    }
+
+    function showTab(tabId) {
+        // Hide all tab panes
+        document.querySelectorAll('.tab-pane').forEach(pane => {
+            pane.classList.remove('active');
+        });
+        
+        // Remove active class from all buttons
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        
+        // Show selected tab pane
+        document.getElementById(tabId).classList.add('active');
+        
+        // Add active class to clicked button
+        event.target.classList.add('active');
+    }
+    </script>
 </body>
 <script src="../scroll.js"></script>
 </html>

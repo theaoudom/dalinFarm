@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRID SHOP</title>
+    <meta name="description" content="Shop our selection of fresh, organic vegetables and fruits. All produce is locally grown using sustainable farming practices and harvested at peak ripeness.">
+    <meta name="keywords" content="organic vegetables, fresh produce, local farm shop, sustainable agriculture, organic fruits">
+    <title>Dalin Farm Shop - Fresh Organic Produce</title>
     <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon">
     <!-- Google Script Ads -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5602570319866246"
@@ -105,235 +107,160 @@
         </div>
     </div>
     <div class="container1">
-        <h1>GRID SHOP</h1>
+        <h1>Organic Farm Shop</h1>
+        <p class="shop-intro">Fresh from our fields to your table</p>
     </div>
     <div class="custom-footer">
         <ul class="custom-path">
             <li><a href="../index.html">HOME</a> <i class="fa-solid fa-arrow-right"></i></li>
-            <li><a href="vigetable.html">SHOP</a> <i class="fa-solid fa-arrow-right"></i></li>
-            <li>GRID SHOP</li>
+            <li>SHOP</li>
         </ul>
+    </div>
+    <div class="shop-description">
+        <p>All our produce is harvested daily and certified organic. We prioritize taste, nutrition, and environmental sustainability in everything we grow.</p>
     </div>
     <div class="aside-item col-12">
         <div class="aside-item1">
             <div class="aside-left">
                 <h6 class="aside-title">FILTER BY PRICE</h6>
                 <hr>
-                <input type="range" name="" id="" style="width: 100%;">
-                <div class="title-button">
-                    <button class="button">FILTER</button>
-                    <div class="div">Price : $ 66 - $ 635</div>
+                <div class="price-range">
+                    <input type="range" min="0" max="100" value="50" class="price-slider" id="priceRange">
+                    <div class="price-values">
+                        <span id="minPrice">$0</span>
+                        <span id="maxPrice">$100</span>
+                    </div>
                 </div>
-                <div class="title">
-                    <h6 style="font-size: 20px; margin: 40px 0 20px 0;">CATEGORIES</h6>
-                    <hr style="margin-bottom: 15px;">
+                <div class="title-button">
+                    <button class="button">APPLY FILTER</button>
+                </div>
+                
+                <div class="categories-section">
+                    <h6>CATEGORIES</h6>
+                    <hr>
                     <ul class="list-filter">
                         <li>
-                            <input type="checkbox" class="checkbox" name="tick">&emsp;
-                            <div class="category-title">
-                                <div class="category-name">ALL</div>
-                                <span class="number" style="text-align: end;">(18)</span>
-                            </div>
-                        </li> <br>
+                            <label class="category-label">
+                                <input type="checkbox" checked>
+                                <span class="category-name">All Products</span>
+                                <span class="count">(24)</span>
+                            </label>
+                        </li>
                         <li>
-                            <input type="checkbox" class="checkbox" name="tick">&emsp;
-                            <div class="category-title">
-                                <div class="category-name">Organic Food</div>
-                                <span class="number" style="text-align: end;">(18)</span>
-                            </div>
-                        </li> <br>
+                            <label class="category-label">
+                                <input type="checkbox">
+                                <span class="category-name">Seasonal Vegetables</span>
+                                <span class="count">(12)</span>
+                            </label>
+                        </li>
                         <li>
-                            <input type="checkbox" class="checkbox" name="tick">&emsp;
-                            <div class="category-title">
-                                <div class="category-name">Health</div>
-                                <span class="number" style="text-align: end;">(18)</span>
-                            </div>
-                        </li> <br>
+                            <label class="category-label">
+                                <input type="checkbox">
+                                <span class="category-name">Fresh Fruits</span>
+                                <span class="count">(8)</span>
+                            </label>
+                        </li>
                         <li>
-                            <input type="checkbox" class="checkbox" name="tick">&emsp;
-                            <div class="category-title">
-                                <div class="category-name">Smoothies</div>
-                                <span class="number" style="text-align: end;">(18)</span>
-                            </div>
+                            <label class="category-label">
+                                <input type="checkbox">
+                                <span class="category-name">Organic Herbs</span>
+                                <span class="count">(4)</span>
+                            </label>
                         </li>
                     </ul>
                 </div>
-                <div class="form-wrap ">
-                    <input type="text" id="search form" placeholder="Search the shop">
-                    <button class="button-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+                <div class="search-section">
+                    <div class="form-wrap">
+                        <input type="text" placeholder="Search products..." aria-label="Search products">
+                        <button class="button-search" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
                 </div>
-                <div class="item">
-                    <h6 style="padding: 50px 0; font-size: 20px;">POPULAR PRODUCTS</h6>
+
+                <div class="popular-products">
+                    <h6>FEATURED PRODUCTS</h6>
                     <hr>
-                    <div class="mian" style="display: flex;">
-                        <div class="unit-left">
-                            <a href="" class="product"> 
-                                <img src="../image/photo2.png" alt="">
-                            </a>
-                        </div>
-                        <div class="unit-body">
-                            <p>Pine Apple</p>
-                            <p>$25.00</p>
+                    <div class="product-item">
+                        <img src="../image/organic-tomatoes.jpg" alt="Fresh Organic Tomatoes">
+                        <div class="product-details">
+                            <h3>Organic Tomatoes</h3>
+                            <p class="price">$4.99/lb</p>
+                            <p class="description">Vine-ripened, rich in flavor</p>
                         </div>
                     </div>
-                    <div class="mian" style="display: flex;">
-                        <div class="unit-left">
-                            <a href="" class="product"> 
-                                <img src="../image/photo2.png" alt="">
-                            </a>
-                        </div>
-                        <div class="unit-body">
-                            <p>Pine Apple</p>
-                            <p>$25.00</p>
-                        </div>
-                    </div>
-                    <div class="mian" style="display: flex;">
-                        <div class="unit-left">
-                            <a href="" class="product"> 
-                                <img src="../image/photo2.png" alt="">
-                            </a>
-                        </div>
-                        <div class="unit-body">
-                            <p>Pine Apple</p>
-                            <p>$25.00</p>
+                    <div class="product-item">
+                        <img src="../image/organic-lettuce.jpg" alt="Fresh Organic Lettuce">
+                        <div class="product-details">
+                            <h3>Crisp Lettuce</h3>
+                            <p class="price">$3.49/head</p>
+                            <p class="description">Locally grown, always fresh</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="item-right">
-                <div class="row">
-                    <div id="card">
-                      <div class="fram-img">
-                        <img src="../image/banana.png" class="card-img-top" alt="...">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">BANANAS</p>
-                        <P class="card-text"><span style="text-decoration: line-through;">$22.00</span>&emsp;$13.00</P>
-                        <h2 style="background-color: brown;">SALE</h2>
-                        <div class="order" >
-                          <a href="product.html" class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
-                          <a href="" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../image/banana.png" alt="Organic Bananas">
+                            <div class="product-badges">
+                                <span class="badge-sale">SALE</span>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                    <div id="card">
-                      <div class="fram-img">          
-                        <img src="../image/potato.png" class="card-img-top" alt="...">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">BANANAS</p>
-                        <P class="card-text">$23.00</P>
-                        <!-- <h2>SEAL</h2> -->
-                        <div class="order" >
-                          <a href="../product.html" class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
-                          <a href="" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <div class="product-info">
+                            <h3>Organic Bananas</h3>
+                            <p class="description">Sweet and nutritious, perfect for snacking</p>
+                            <div class="price">
+                                <span class="original-price">$22.00</span>
+                                <span class="sale-price">$13.00</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-view" aria-label="View details">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                <button class="btn-add-cart" aria-label="Add to cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                    <div id="card">
-                      <div class="fram-img">
-                        <img src="../image/carot.png" class="card-img-top" alt="...">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">BANANAS</p>
-                        <P class="card-text">$23.00</P>
-                        <h2 style="background-color: #93a6ab;">NEW</h2>
-                        <div class="order" >
-                          <a href="product.html" class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
-                          <a href="" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../image/potato.png" alt="Organic Potatoes">
                         </div>
-                      </div> 
+                        <div class="product-info">
+                            <h3>Organic Potatoes</h3>
+                            <p class="description">Fresh from our fields, perfect for roasting</p>
+                            <div class="price">
+                                <span class="regular-price">$5.99/lb</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-view" aria-label="View details">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                <button class="btn-add-cart" aria-label="Add to cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Add more product cards with similar structure -->
                 </div>
-                <!-- row2 -->
-                <div class="row">
-                    <div id="card">
-                      <div class="fram-img">
-                        <img src="../image/banana.png" class="card-img-top" alt="...">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">BANANAS</p>
-                        <P class="card-text"><span style="text-decoration: line-through;">$12.00</span>&emsp;$23.00</P>
-                        <h2 style="background-color: brown;">SALE</h2>
-                        <div class="order" >
-                          <a href="product.html" class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
-                          <a href="" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
-                        </div>
-                      </div>
+
+                <div class="pagination">
+                    <button class="prev-page" aria-label="Previous page">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="page-numbers">
+                        <span class="active">1</span>
+                        <span>2</span>
+                        <span>3</span>
                     </div>
-                    <div id="card">
-                      <div class="fram-img">          
-                        <img src="../image/potato.png" class="card-img-top" alt="...">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">BANANAS</p>
-                        <P class="card-text">$23.00</P>
-                        <!-- <h2>SEAL</h2> -->
-                        <div class="order" >
-                          <a href="product.html" class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
-                          <a href="" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div id="card">
-                      <div class="fram-img">
-                        <img src="../image/carot.png" class="card-img-top" alt="...">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">BANANAS</p>
-                        <P class="card-text">$23.00</P>
-                        <h2 style="background-color: #93a6ab;">NEW</h2>
-                        <div class="order" >
-                          <a href="product.html" class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
-                          <a href="" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
-                        </div>
-                      </div> 
-                    </div>
-                </div>
-                <!-- row3 -->
-                <div class="row">
-                    <div id="card">
-                      <div class="fram-img">
-                        <img src="../image/banana.png" class="card-img-top" alt="...">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">BANANAS</p>
-                        <P class="card-text"><span style="text-decoration: line-through;">$12.00</span>&emsp;$23.00</P>
-                        <h2 style="background-color: brown;">SALE</h2>
-                        <div class="order" >
-                          <a href="product.html" class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
-                          <a href="" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div id="card">
-                      <div class="fram-img">          
-                        <img src="../image/potato.png" class="card-img-top" alt="...">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">BANANAS</p>
-                        <P class="card-text">$23.00</P>
-                        <!-- <h2>SEAL</h2> -->
-                        <div class="order" >
-                          <a href="product.html" class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
-                          <a href="" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div id="card">
-                      <div class="fram-img">
-                        <img src="../image/carot.png" class="card-img-top" alt="...">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">BANANAS</p>
-                        <P class="card-text">$23.00</P>
-                        <h2 style="background-color: #93a6ab;">NEW</h2>
-                        <div class="order" >
-                          <a href="product.html" class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
-                          <a href="" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
-                        </div>
-                      </div> 
-                    </div>
+                    <button class="next-page" aria-label="Next page">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -379,6 +306,17 @@
     </div>
     
 </div>
+<script>
+// Price range slider functionality
+const priceRange = document.getElementById('priceRange');
+const minPrice = document.getElementById('minPrice');
+const maxPrice = document.getElementById('maxPrice');
+
+priceRange.addEventListener('input', function() {
+    const value = this.value;
+    minPrice.textContent = `$${value}`;
+    maxPrice.textContent = `$${100 - value}`;
+});
+</script>
 </body>
-<script src="../scroll.js"></script>
 </html>

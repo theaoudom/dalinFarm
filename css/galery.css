@@ -6,16 +6,35 @@
 .container1{
     width: 100%;
     height: 400px;
-    background: url(../image/vegetable-bg.jpg);
-    background-color: gray;
+    background: url(../image/blog-bg.jpg);
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
 }
 .container1 h1{
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.gallery-intro {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #f0f0f0;
+}
+.gallery-description {
     text-align: center;
-    font-size: 50px;
-    padding: 150px 0;
-    text-shadow: 3px 9px 16px rgba(0, 0, 0, 0.18);
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 .custom-footer{
     width: 100%;
@@ -53,44 +72,154 @@
     margin-left: 15px;
 }
 .title1{
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    margin: 30px 0;
 }
 .title1 ul{
     list-style: none;
     display: flex;
-    width: 300px;
-    justify-content: space-around;
-    padding: 50px 0 20px 0;
-    border-bottom:4px solid gray;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
 }
 .title1 ul li a{
-    color: #D5DBDB;
-    font-weight: bold;
     text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
-.title1 ul li #all{
-    color: green;
-    width: 100%;
-    border-bottom: green;
-}
-.title1 ul{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;
-}
-.title1 ul li:not(#all){
-    margin: 0 20px;
+.title1 ul li a:hover,
+.title1 ul li a.active {
+    background-color: #5ea148;
+    color: white;
 }
 .container3{
-    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 1rem;
-    padding: 50px 130px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
 }
-.container3 img{
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+.gallery-item img {
     width: 100%;
     height: 300px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    padding: 20px;
+    color: white;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+.gallery-item:hover .gallery-caption {
+    transform: translateY(0);
+}
+.gallery-caption h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+.gallery-caption p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+.gallery-cta {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    margin-top: 40px;
+}
+.gallery-cta h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+.gallery-cta p {
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.btn-primary {
+    background-color: #5ea148;
+    color: white;
+}
+.btn-secondary {
+    background-color: transparent;
+    color: #5ea148;
+    border: 2px solid #5ea148;
+}
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+@media (max-width: 768px) {
+    .container1 h1 {
+        font-size: 2.5rem;
+    }
+    
+    .container3 {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .gallery-caption {
+        transform: translateY(0);
+        background: rgba(0,0,0,0.7);
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 480px) {
+    .container1 h1 {
+        font-size: 2rem;
+    }
+    
+    .gallery-intro {
+        font-size: 1rem;
+    }
+    
+    .title1 ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }

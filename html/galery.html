@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRID GALARY</title>
+    <meta name="description" content="Explore our organic farm's photo gallery showcasing fresh produce, sustainable farming practices, and behind-the-scenes glimpses of our farming operations.">
+    <meta name="keywords" content="organic farm gallery, fresh produce photos, sustainable farming images, farm to table pictures">
+    <title>Dalin Farm Gallery - Visual Journey Through Our Organic Farm</title>
     <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon">
     
     <!-- Google Script Ads -->
@@ -100,30 +102,81 @@
         </div>
     </div>
     <div class="container1">
-        <h1>GRID GALLERY</h1>
+        <h1>Our Farm Gallery</h1>
+        <p class="gallery-intro">Experience the beauty of organic farming through our lens</p>
     </div>
     <div class="custom-footer">
       <ul class="custom-path">
           <li><a href="../index.html">HOME</a> <i class="fa-solid fa-arrow-right"></i></li>
-          <li><a href="vigetable.html">SHOP</a> <i class="fa-solid fa-arrow-right"></i></li>
-          <li>GRID GALARY</li>
+          <li>GALLERY</li>
       </ul>
+    </div>
+    <div class="gallery-description">
+        <p>Welcome to our visual journey through Dalin Farm. Each image tells a story of our commitment to organic farming, sustainable practices, and the natural beauty of our produce.</p>
     </div>
     <div class="title1">
       <ul>
-        <li ><a id="all" href="">ALL</a></li>
-        <li><a href="">VEGETABLES</a></li>
-        <li><a href="">FRUITE</a></li>
+        <li><a id="all" href="#" class="active">ALL</a></li>
+        <li><a href="#vegetables">VEGETABLES</a></li>
+        <li><a href="#fruits">FRUITS</a></li>
+        <li><a href="#farm-life">FARM LIFE</a></li>
+        <li><a href="#sustainable-practices">SUSTAINABLE PRACTICES</a></li>
       </ul>
     </div>
     <div class="container3">
-      <img src="../image/or1.jpg" alt="">
-      <img src="../image/vegetable.jpg" alt="">
-      <img src="../image/tea1.jpg" alt="">
-      <img src="../image/greentea.jpg" alt="">
-      <img src="../image/people.jpg" alt="">
-      <img src="../image/or1.jpg" alt="">
+        <div class="gallery-item vegetables">
+            <img src="../image/or1.jpg" alt="Fresh organic vegetables harvested at dawn">
+            <div class="gallery-caption">
+                <h3>Morning Harvest</h3>
+                <p>Our vegetables are harvested early morning to ensure maximum freshness</p>
+            </div>
+        </div>
+        <div class="gallery-item farm-life">
+            <img src="../image/vegetable.jpg" alt="Sustainable farming practices in action">
+            <div class="gallery-caption">
+                <h3>Sustainable Growing</h3>
+                <p>Natural pest control and organic fertilization methods in practice</p>
+            </div>
+        </div>
+        <div class="gallery-item fruits">
+            <img src="../image/tea1.jpg" alt="Organic fruit orchard in bloom">
+            <div class="gallery-caption">
+                <h3>Orchard Views</h3>
+                <p>Our fruit trees maintained without synthetic pesticides</p>
+            </div>
+        </div>
+        <div class="gallery-item sustainable-practices">
+            <img src="../image/greentea.jpg" alt="Organic tea plantation">
+            <div class="gallery-caption">
+                <h3>Tea Garden</h3>
+                <p>Organic tea leaves grown with care and tradition</p>
+            </div>
+        </div>
+        <div class="gallery-item farm-life">
+            <img src="../image/people.jpg" alt="Our dedicated farming team at work">
+            <div class="gallery-caption">
+                <h3>Farm Team</h3>
+                <p>Meet the people who make organic farming possible</p>
+            </div>
+        </div>
+        <div class="gallery-item vegetables">
+            <img src="../image/or2.jpg" alt="Freshly harvested organic produce">
+            <div class="gallery-caption">
+                <h3>Fresh Picks</h3>
+                <p>Daily harvest ready for market delivery</p>
+            </div>
+        </div>
     </div>
+
+    <div class="gallery-cta">
+        <h2>Experience Our Farm</h2>
+        <p>Want to see more? Visit our farm for tours and workshops, or join our CSA program for weekly fresh produce.</p>
+        <div class="cta-buttons">
+            <a href="contact.html" class="btn btn-primary">Schedule a Visit</a>
+            <a href="csa.html" class="btn btn-secondary">Join CSA Program</a>
+        </div>
+    </div>
+
     <div class="footer">
         <div class="boder">
           <div class="left">
@@ -165,4 +218,29 @@
     </div>
 </body>
 <script src="../scroll.js"></script>
+<script>
+// Add simple filtering functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.title1 a');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            const filter = button.getAttribute('href').replace('#', '');
+            
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            galleryItems.forEach(item => {
+                if (filter === 'all' || item.classList.contains(filter)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+</script>
 </html>

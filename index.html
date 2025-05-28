@@ -4,11 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
+    <meta name="description" content="Dalin Farm - Your trusted source for organic, farm-fresh vegetables, fruits, and sustainable agricultural products. We offer premium quality organic produce grown with care and commitment to environmental sustainability.">
+    <meta name="keywords" content="organic farm, fresh vegetables, organic fruits, sustainable farming, farm to table, organic produce, local farm">
+    <meta name="author" content="Dalin Farm">
+    <meta name="robots" content="index, follow">
+    <title>Dalin Farm - Organic Fresh Produce & Sustainable Farming</title>
     <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/foter.css">
+    <!-- Structured Data for Rich Results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FarmStore",
+      "name": "Dalin Farm",
+      "image": "image/logo.png",
+      "description": "Organic farm offering fresh vegetables, fruits, and sustainable agricultural products",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "Cambodia"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "offers": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Organic Vegetables",
+              "description": "Fresh, certified organic vegetables grown without harmful additives"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Organic Fruits",
+              "description": "Naturally grown fruits rich in vitamins and nutrients"
+            }
+          }
+        ]
+      }
+    }
+    </script>
     <!-- Google Script Ads -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5602570319866246"
     crossorigin="anonymous"></script>
@@ -143,12 +182,18 @@
     </div>
     <div class="container1">
       <div class="left">
-        <img src="image/orange.png" alt="" height="100%">
+        <img src="image/orange.png" alt="Fresh organic oranges from Dalin Farm" height="100%">
       </div>
       <div class="right">
         <h3 style="font-family: 'Kalam', cursive; color: #5ea148;">Welcome to Dalin Farm</h3>
-        <h1 style="letter-spacing: 3px;font-weight: bold; font-size: 50px;">ABOUT US</h1> <br><br><br>
-        <p>At Dalin Farm, we take pride in our commitment to sustainable and organic farming practices. Our dedicated team cultivates fresh, nutritious produce across our certified organic lands. We believe in bringing the best of nature directly to your table, ensuring every harvest meets the highest quality standards.</p>
+        <h1 style="letter-spacing: 3px;font-weight: bold; font-size: 50px;">ABOUT US</h1> <br>
+        <p>At Dalin Farm, we're more than just farmers – we're stewards of the land and advocates for sustainable agriculture. Our certified organic farm spans across carefully maintained acres where we implement traditional farming wisdom alongside modern sustainable practices.</p>
+        <p>Every product we offer is grown with dedication to three core principles:</p>
+        <ul style="list-style: none; padding-left: 0;">
+          <li>🌱 <strong>Sustainability</strong>: Using eco-friendly farming methods that protect our environment</li>
+          <li>🍎 <strong>Quality</strong>: Ensuring every harvest meets the highest organic standards</li>
+          <li>💚 <strong>Community</strong>: Supporting local food systems and educating about sustainable farming</li>
+        </ul>
         <div class="button" style="display: flex;">
           <button style="border-radius: 50%; width: 60px; height: 60px; display: flex; justify-content: center; align-items: center;"> 
             <i class="fa-solid fa-arrow-right"></i>
@@ -168,7 +213,7 @@
             <i class="fa-regular fa-lemon"></i>
           </div>
           <a href="">FARM FRESH</a>
-          <p>Our produce goes from farm to table within hours of harvest, ensuring maximum freshness and nutritional value for our customers.</p>
+          <p>Experience the difference of truly fresh produce! Our harvest-to-table approach ensures that vegetables and fruits are picked at peak ripeness and delivered within hours. This preserves maximum nutritional value and delivers the authentic taste of farm-fresh produce.</p>
         </div>
         <div class="box">
           <div class="num-icon">
@@ -197,8 +242,9 @@
     </div>
     </div>
     <div class="container3 mt-5">
-      <h4 class="title-style" style="text-align: center;"> latest Arrivals</h4>
-      <h2 class="title" style="text-align: center; font-size: 50px; font-weight: bold; width: 100%;">NEW PRODUCTS</h2>
+      <h4 class="title-style" style="text-align: center;">Featured Products</h4>
+      <h2 class="title" style="text-align: center; font-size: 50px; font-weight: bold; width: 100%;">ORGANIC HARVEST</h2>
+      <p style="text-align: center; max-width: 800px; margin: 20px auto;">Discover our carefully curated selection of organic produce, harvested at peak ripeness to ensure maximum nutrition and flavor. Each product is grown using sustainable farming practices and meets strict organic certification standards.</p>
     </div>
     <div class="title1">
       <ul>
@@ -212,15 +258,16 @@
       <div class="row">
         <div id="card">
           <div class="fram-img">
-            <img src="image/banana.png" class="card-img-top" alt="...">
+            <img src="image/banana.png" class="card-img-top" alt="Fresh Organic Bananas">
           </div>
           <div class="card-body">
-            <p class="card-text">BANANAS</p>
+            <p class="card-text">ORGANIC BANANAS</p>
+            <p class="product-description">Hand-picked at perfect ripeness, our organic bananas are rich in potassium and naturally sweet. Perfect for healthy snacking or baking.</p>
             <P class="card-text"><span style="text-decoration: line-through;">$22.00</span>&emsp;$13.00</P>
             <h2 style="background-color: brown;">SALE</h2>
-            <div class="order" >
-              <a href="html/product.html" class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
-              <a href="" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            <div class="order">
+              <a href="html/product.html" class="search" aria-label="View product details"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href="" class="cart" aria-label="Add to shopping cart"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
           </div>
         </div>
